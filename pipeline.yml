@@ -26,6 +26,8 @@ jobs:
                 dir
                 echo 1
                 ls selenium-setup
+                cd selenium-setup
+                ls
                 mvn install
                 
                 echo 4
