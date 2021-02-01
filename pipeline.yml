@@ -27,8 +27,10 @@ jobs:
                 echo 1
                 ls selenium-setup
                 cd selenium-setup
+                echo hey 2
                 ls
+                echo hey 3
                 mvn install
                 
                 echo 4
-                $PWD
+                echo $PWD
