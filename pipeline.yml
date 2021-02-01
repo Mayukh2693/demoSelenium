@@ -1,21 +1,34 @@
+resources:
+  - name: selenium-setup
+    type: git
+    icon: github
+    source:
+      uri: https://github.com/Mayukh2693/demoSelenium
 jobs:
   - name: 'run'
     public: true
     plan:
+      - get: selenium-setup
+        trigger: true
       - task: 'install'
         config:
           platform: linux
           image_resource:
             type: docker-image
-            source: { repository: maven }
-         
+            source: { repository: selenium/standalone-chrome }
+          inputs:
+            - name: selenium-setup
           run:
-            path: /bin/sh
+            path: /bin/bash
             args:
               - -c
               - |
                 dir
-                ls
-                mvn test
+                echo 1
+                ls selenium-setup
+                echo 2
+                cd /$PWD/Selenium
+                echo 3
                 echo cd ls
-                echo cd dir
+                echo 4
+                $PWD
