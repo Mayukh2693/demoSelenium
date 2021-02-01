@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Tests.SimpleTest" duration-ms="6040" started-at="2021-02-01T09:29:29Z" finished-at="2021-02-01T09:29:35Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="6040" started-at="2021-02-01T09:29:29Z" finished-at="2021-02-01T09:29:35Z">
+      <class name="Tests.SimpleTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:Tests.SimpleTest@22f71333]" name="setup" is-config="true" duration-ms="1564" started-at="2021-02-01T14:59:29Z" finished-at="2021-02-01T14:59:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="applyAsDeveloper()[pri:0, instance:Tests.SimpleTest@22f71333]" name="applyAsDeveloper" duration-ms="4322" started-at="2021-02-01T14:59:30Z" finished-at="2021-02-01T14:59:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applyAsDeveloper -->
+        <test-method status="PASS" signature="close()[pri:0, instance:Tests.SimpleTest@22f71333]" name="close" is-config="true" duration-ms="140" started-at="2021-02-01T14:59:35Z" finished-at="2021-02-01T14:59:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- Tests.SimpleTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Tests.SimpleTest -->
+</testng-results>
