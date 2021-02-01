@@ -23,6 +23,7 @@ public class SimpleTest {
 	   public void setup() throws MalformedURLException{
 	       //use Chrome Driver
 		   DesiredCapabilities dcap = DesiredCapabilities.chrome();
+		   dcap.setCapability("headless", true);
 //		   String driverpath = "C:/Users/mnath077/eclipse-workspace/Selenium/drivers/chromedriver.exe";
 //		   System.setProperty("webdriver.chrome.driver",driverpath);
 //	       driver = new ChromeDriver();

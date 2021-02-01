@@ -15,7 +15,7 @@ jobs:
           platform: linux
           image_resource:
             type: docker-image
-            source: { repository: selenium/standalone-chrome }
+            source: { repository: markhobson/maven-chrome }
           inputs:
             - name: selenium-setup
           run:
@@ -26,9 +26,7 @@ jobs:
                 dir
                 echo 1
                 ls selenium-setup
-                echo 2
-                cd /$PWD/Selenium
-                echo 3
-                echo cd ls
+                mvn install
+                
                 echo 4
                 $PWD
