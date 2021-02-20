@@ -12,6 +12,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.testng.TestNG;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 import Pages.Home;
 
@@ -28,6 +29,7 @@ public class SimpleTest {
 //	       driver = new ChromeDriver();
 		   // Run on docker container
 		   //URL gamelan = new URL("http://localhost:4444/wd/hub");
+		   WebDriverManager.chromedriver().setup();
 		   ChromeOptions options = new ChromeOptions().setHeadless(true);
 	       driver = new ChromeDriver(options);
 	       driver.manage().window().maximize();
